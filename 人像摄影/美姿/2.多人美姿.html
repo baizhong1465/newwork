@@ -1,0 +1,504 @@
+<!DOCTYPE html><html><head>
+      <title>2.多人美姿</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\slan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.10\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="点">点 </h1>
+<h2 id="温馨浪漫的气氛">温馨浪漫的气氛 </h2>
+<ol>
+<li>把身体、头部极力的靠近
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031143111.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031143147.png">
+</li>
+<li>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031143633.png">
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>头部极力靠近
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031143920.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031143943.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031143952.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="站姿">站姿 </h2>
+<h3 id="一高一低">一高一低 </h3>
+<ol>
+<li>如女生离镜头近，男生远
+<ol>
+<li>如女高男低，难高女低</li>
+<li>
+<img src="./assets/Pasted image 20231031144042.png">
+</li>
+</ol>
+</li>
+<li>在常规构图中，一般是男高女低</li>
+<li>女高男低就会显得出人意料点
+<ol>
+<li>在合影的时候非常少的两个人一样高</li>
+<li>
+<img src="./assets/Pasted image 20231031144312.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="一前一后">一前一后 </h3>
+<ol>
+<li>男士在前，女士在后
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031144545.png">
+</li>
+</ol>
+</li>
+<li>女士在前面脸可能会变大，一般不会使用广角镜头，一般使用中焦，长焦
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031144722.png">
+</li>
+</ol>
+</li>
+<li>女士有送跨
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031144754.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="头部落差">头部落差 </h3>
+<ol>
+<li>身高要有落差
+<ol>
+<li>最萌身高差，男生的鼻子刚好处在女士额头顶部处</li>
+<li>男生一低头可以轻吻女士</li>
+<li>
+<img src="./assets/Pasted image 20231031162354.png">
+</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231031162459.png">
+</li>
+</ol>
+<h3 id="一站一靠">一站一靠 </h3>
+<ol>
+<li>一个人站直，一个人压过去，不要两个人都独立自主
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031162651.png">
+</li>
+</ol>
+</li>
+<li>一般都是男士站直的角色
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031162720.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031162756.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="坐姿">坐姿 </h2>
+<h3 id="一站一坐">一站一坐 </h3>
+<ol>
+<li>男站女坐
+<ol>
+<li>如果女生坐的过低的话，是一个比较正经的华民啊</li>
+<li>
+<img src="./assets/Pasted image 20231031162905.png">
+</li>
+</ol>
+</li>
+<li>男坐女站
+<ol>
+<li>女士的腿还是有点靠前</li>
+<li>
+<img src="./assets/Pasted image 20231031163028.png">
+</li>
+</ol>
+</li>
+<li>三轴不平行，
+<ol>
+<li>这张照片中，女士有些显得国字脸，在这种情况下应该加强立体透视感，让观众一眼就明白这是透视产生的国字脸</li>
+<li>腿长
+<ol>
+<li>广角镜头</li>
+<li>绷直脚尖</li>
+<li>互有遮挡
+<ol>
+<li>阴影遮挡，</li>
+<li>双腿互相交错</li>
+</ol>
+</li>
+<li>蹲低拍摄</li>
+</ol>
+</li>
+<li>上比显得特别细
+<ol>
+<li>明暗变化非常强</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231031163114.png">
+</li>
+</ol>
+</li>
+<li>男坐女站
+<ol>
+<li>所有面都没有平行画面</li>
+<li>
+<img src="./assets/Pasted image 20231031163659.png">
+</li>
+</ol>
+</li>
+<li></li>
+</ol>
+<h3 id="双人同坐">双人同坐 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031163807.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031163819.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031163828.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031163934.png">
+</li>
+</ol>
+<h2 id="卧姿">卧姿 </h2>
+<h3 id="一坐一卧">一坐一卧 </h3>
+<ol>
+<li>儿童摄影
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031164100.png">
+</li>
+</ol>
+</li>
+<li>温馨
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031164123.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031164131.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="双人同卧">双人同卧 </h3>
+<ol>
+<li>衣服颜色，被子颜色，枕头颜色都是有原因的
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031164326.png">
+</li>
+</ol>
+</li>
+<li>抬一点头
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031164431.png">
+</li>
+</ol>
+</li>
+<li>一人趴着，一人看着
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031164502.png">
+</li>
+</ol>
+</li>
+<li>婚纱常用的倒躺着<br>
+5. 一只手牵着，如果两只手都牵着就有些怪异<br>
+6. <img src="./assets/Pasted image 20231031164529.png"></li>
+<li>脸部特写。最好不要仰天，最好抬一点头
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031164750.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="仰卧">仰卧 </h3>
+<ol>
+<li>不要四仰八叉的躺在那里，最好有一些旋转
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031164906.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031164931.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="趴着">趴着 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031164957.png">
+</li>
+</ol>
+<h2 id="互动">互动 </h2>
+<h3 id="面对面">面对面 </h3>
+<ul>
+<li>大部分手部牵在一起，或者抱着对方，但主要要有高低错落</li>
+</ul>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031165052.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031165102.png">
+</li>
+</ol>
+<h3 id="背对背">背对背 </h3>
+<ul>
+<li>靠头部，靠颈部的姿势来互动</li>
+<li>
+<img src="./assets/Pasted image 20231031165214.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231031165230.png">
+</li>
+</ul>
+<h3 id="双人同向及转身">双人同向及转身 </h3>
+<ol>
+<li>两人都朝镜头
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031165356.png">
+</li>
+</ol>
+</li>
+<li>两个人都朝向大海
+<ol>
+<li>
+<img src="./assets/Pasted image 20231031165405.png">
+</li>
+</ol>
+</li>
+<li>两个人都背对相机，但是，其中一人转身<br>
+1.<br>
+2. <img src="./assets/Pasted image 20231031165437.png"></li>
+</ol>
+<h3 id="躯干的角度">躯干的角度 </h3>
+<ol>
+<li>躯干的角度要有互动</li>
+</ol>
+<ul>
+<li>两人的肚子贴在一起就是X形
+<ul>
+<li>
+<img src="./assets/Pasted image 20231031165556.png">
+</li>
+</ul>
+</li>
+<li>男生微微左倾，女士肚子靠右倾，背部与腿呈现夹角
+<ul>
+<li>
+<img src="./assets/Pasted image 20231031165651.png">
+</li>
+</ul>
+</li>
+<li>男士站直，女士用肚子贴过去，裙摆往后仰
+<ul>
+<li>抱起来要有后仰，形成夹角</li>
+<li>
+<img src="./assets/Pasted image 20231031165720.png">
+</li>
+<li>男生反弓部不太好看，可以一只腿往后
+<ul>
+<li>
+<img src="./assets/Pasted image 20231031165804.png">
+</li>
+</ul>
+</li>
+<li>经典的吻法，如世纪之吻
+<ul>
+<li>
+<img src="./assets/Pasted image 20231101142144.png">
+</li>
+</ul>
+</li>
+<li></li>
+</ul>
+</li>
+</ul>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#点" class="md-toc-link"><p>点</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#温馨浪漫的气氛" class="md-toc-link">
+            <p>温馨浪漫的气氛</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#站姿" class="md-toc-link"><p>站姿</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#一高一低" class="md-toc-link">
+            <p>一高一低</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#一前一后" class="md-toc-link">
+            <p>一前一后</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#头部落差" class="md-toc-link">
+            <p>头部落差</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#一站一靠" class="md-toc-link">
+            <p>一站一靠</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#坐姿" class="md-toc-link"><p>坐姿</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#一站一坐" class="md-toc-link">
+            <p>一站一坐</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#双人同坐" class="md-toc-link">
+            <p>双人同坐</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#卧姿" class="md-toc-link"><p>卧姿</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#一坐一卧" class="md-toc-link">
+            <p>一坐一卧</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#双人同卧" class="md-toc-link">
+            <p>双人同卧</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#仰卧" class="md-toc-link">
+            <p>仰卧</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#趴着" class="md-toc-link">
+            <p>趴着</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#互动" class="md-toc-link"><p>互动</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#面对面" class="md-toc-link">
+            <p>面对面</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#背对背" class="md-toc-link">
+            <p>背对背</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#双人同向及转身" class="md-toc-link">
+            <p>双人同向及转身</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#躯干的角度" class="md-toc-link">
+            <p>躯干的角度</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>

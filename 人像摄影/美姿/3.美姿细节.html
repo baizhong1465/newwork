@@ -1,0 +1,667 @@
+<!DOCTYPE html><html><head>
+      <title>3.美姿细节</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\slan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.10\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="手势">手势 </h1>
+<h2 id="手部远离身体">手部远离身体 </h2>
+<ol>
+<li>手远离身体，可以说=是跟身体互动，也可以是跟物体互动
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101142431.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101142442.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101142508.png">
+</li>
+</ol>
+</li>
+<li>跑物体，如抛学士帽，鲜花等
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101142547.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101142602.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101142609.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="触摸">触摸 </h2>
+<ol>
+<li>手可以去触摸某些东西</li>
+</ol>
+<h3 id="头顶">头顶 </h3>
+<ol>
+<li>后脑勺，头顶都可以
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101142735.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101142753.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="额头或者太阳穴位置">额头或者太阳穴位置 </h3>
+<ol>
+<li>太阳穴或者额头</li>
+<li>一只手触摸额头呈现三角形，另一只手摸臀部呈现菱形，在s形中出现集合形状。
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101142845.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101142920.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101143214.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="脸部">脸部 </h3>
+<ol>
+<li>优点：可以遮挡脸部 宽度让脸看起来变瘦
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101143245.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101143259.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101143307.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="触摸下巴">触摸下巴 </h3>
+<ol>
+<li>男生一般是用手指头尖触摸下巴，女生一般要不是手指头背面，要不就是手掌
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101143408.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101143536.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101143425.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="脖子">脖子 </h3>
+<ul>
+<li>有种放松的感觉</li>
+</ul>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101143547.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101143643.png">
+</li>
+</ol>
+<h3 id="肩膀">肩膀 </h3>
+<ol>
+<li>撒旦</li>
+<li>
+<img src="./assets/Pasted image 20231101143722.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101143730.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101143736.png">
+</li>
+</ol>
+<h3 id="胸口">胸口 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101143759.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101143813.png">
+</li>
+<li>十指环扣在胸前，目前不太流行也比较难做
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101143822.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="腰部">腰部 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101143917.png">
+</li>
+<li>手背插腰
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101143928.png">
+</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231101144011.png">
+</li>
+</ol>
+<h3 id="臀部">臀部 </h3>
+<ul>
+<li>触摸的时候不能直直的，要张开，形成空洞，最好两只手姿势不一样</li>
+</ul>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101144052.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101144058.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101144103.png">
+</li>
+</ol>
+<h3 id="腿部">腿部 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101144216.png">
+</li>
+</ol>
+<h3 id="脚">脚 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101144248.png">
+</li>
+<li>不穿鞋的时候，注意脚的造型，如是否要涂指甲油等等
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101144257.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="对方">对方 </h3>
+<h4 id="牵手">牵手 </h4>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101144444.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101144455.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101144515.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101144525.png">
+</li>
+</ol>
+<h4 id="放在对方肩膀或胸口">放在对方肩膀或胸口 </h4>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101144557.png">
+</li>
+<li>也可以放在肩胛骨的地方做一个互动
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101144604.png">
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="道具">道具 </h1>
+<h2 id="花束">花束 </h2>
+<ol>
+<li>需要选符合人物气质，事件的花，如花语是什么，含义是什么
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101144713.png">
+</li>
+</ol>
+</li>
+<li>最好选一个带有颜色渐变的花，这样会显得耐看，不会显得单一
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101144845.png">
+</li>
+</ol>
+</li>
+<li>可以用花当作前景<br>
+4. 前景和模特手中的花要一致<br>
+5. <img src="./assets/Pasted image 20231101145018.png"></li>
+</ol>
+<h2 id="包">包 </h2>
+<ul>
+<li>女士拎着包时候手就不会不知道往哪里摆</li>
+</ul>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101145101.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101145107.png">
+</li>
+<li>搭在肩膀上，这个包必须有特色，好看
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101145214.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="相机">相机 </h2>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101145402.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101145432.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101145438.png">
+</li>
+</ol>
+<h2 id="衣服">衣服 </h2>
+<ol>
+<li>大毯子
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101145531.png">
+</li>
+</ol>
+</li>
+<li>从一堆衣服里露出来
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101145538.png">
+</li>
+</ol>
+</li>
+<li>纱巾
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101145626.png">
+</li>
+</ol>
+</li>
+<li>裙子
+<ol>
+<li>不要刻意去甩，这样营造不出来轻盈柔顺的感觉</li>
+<li>主要靠风，靠裙子轻盈</li>
+<li>
+<img src="./assets/Pasted image 20231101145721.png">
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="视线">视线 </h1>
+<h2 id="单人视线">单人视线 </h2>
+<h3 id="直视镜头">直视镜头 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101150048.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101150059.png">
+</li>
+<li>小孩子尽量引导
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101150139.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="略低">略低 </h3>
+<ol>
+<li>往下看-柔顺如水的性格
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101150228.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="略高">略高 </h3>
+<ol>
+<li>往上看，- 希望的感觉容易出现眼神光
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101150311.png">
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="视线的方向与脸部方向一致">视线的方向与脸部方向一致 </h3>
+<ul>
+<li>让人感觉舒缓</li>
+</ul>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101150454.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101150514.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101150524.png">
+</li>
+</ol>
+<h3 id="视线的方向与脸部方向相反">视线的方向与脸部方向相反 </h3>
+<ol>
+<li>质疑好奇感觉
+<ol>
+<li>显得模特更自主，有想法，有思维，有个性</li>
+<li>
+<img src="./assets/Pasted image 20231101150613.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101150620.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153213.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="多人视线">多人视线 </h2>
+<h3 id="两人对视">两人对视 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101153337.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153343.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153355.png">
+</li>
+</ol>
+<h3 id="同看一处">同看一处 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101153412.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153424.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153434.png">
+</li>
+</ol>
+<h3 id="一人看一处另一人看对方">一人看一处，另一人看对方 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101153531.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153538.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153544.png">
+</li>
+</ol>
+<h3 id="各看一处">各看一处 </h3>
+<ol>
+<li>都显得独立自主
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101153624.png">
+</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153635.png">
+</li>
+</ol>
+<h3 id="闭眼一人或多人">闭眼（一人或多人） </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231101153712.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153726.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153734.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231101153742.png">
+</li>
+<li></li>
+</ol>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#手势" class="md-toc-link"><p>手势</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#手部远离身体" class="md-toc-link">
+            <p>手部远离身体</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#触摸" class="md-toc-link"><p>触摸</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#头顶" class="md-toc-link">
+            <p>头顶</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#额头或者太阳穴位置" class="md-toc-link">
+            <p>额头或者太阳穴位置</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#脸部" class="md-toc-link">
+            <p>脸部</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#触摸下巴" class="md-toc-link">
+            <p>触摸下巴</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#脖子" class="md-toc-link">
+            <p>脖子</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#肩膀" class="md-toc-link">
+            <p>肩膀</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#胸口" class="md-toc-link">
+            <p>胸口</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#腰部" class="md-toc-link">
+            <p>腰部</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#臀部" class="md-toc-link">
+            <p>臀部</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#腿部" class="md-toc-link">
+            <p>腿部</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#脚" class="md-toc-link">
+            <p>脚</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#对方" class="md-toc-link"><p>对方</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#牵手" class="md-toc-link">
+            <p>牵手</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#放在对方肩膀或胸口" class="md-toc-link">
+            <p>放在对方肩膀或胸口</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#道具" class="md-toc-link"><p>道具</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#花束" class="md-toc-link">
+            <p>花束</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#包" class="md-toc-link">
+            <p>包</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#相机" class="md-toc-link">
+            <p>相机</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#衣服" class="md-toc-link">
+            <p>衣服</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#视线" class="md-toc-link"><p>视线</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#单人视线" class="md-toc-link"><p>单人视线</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#直视镜头" class="md-toc-link">
+            <p>直视镜头</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#略低" class="md-toc-link">
+            <p>略低</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#略高" class="md-toc-link">
+            <p>略高</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#视线的方向与脸部方向一致" class="md-toc-link">
+            <p>视线的方向与脸部方向一致</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#视线的方向与脸部方向相反" class="md-toc-link">
+            <p>视线的方向与脸部方向相反</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#多人视线" class="md-toc-link"><p>多人视线</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#两人对视" class="md-toc-link">
+            <p>两人对视</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#同看一处" class="md-toc-link">
+            <p>同看一处</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#一人看一处另一人看对方" class="md-toc-link">
+            <p>一人看一处，另一人看对方</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#各看一处" class="md-toc-link">
+            <p>各看一处</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#闭眼一人或多人" class="md-toc-link">
+            <p>闭眼（一人或多人）</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>

@@ -1,0 +1,769 @@
+<!DOCTYPE html><html><head>
+      <title>1. 色彩基础</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\slan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.10\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="一-色既是空">一、色既是空 </h1>
+<h2 id="光的本质">光的本质 </h2>
+<ol>
+<li>光的分类
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024122041.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024122454.png">
+</li>
+</ol>
+</li>
+<li>色彩即幻觉
+<ol>
+<li>色彩本质其实就是人将不同波段光翻译的结果</li>
+</ol>
+</li>
+<li>非可见光的世界
+<ol>
+<li>相机可以拍摄到一些紫外线和红外线
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024122828.png">
+</li>
+</ol>
+</li>
+<li>如果不想拍摄到这些，因为镜头上有uv镀膜和红外截止滤镜。小部分过滤不掉</li>
+<li>红外滤镜
+<ol>
+<li>只拍摄红外线</li>
+</ol>
+</li>
+<li>如果没有红外截止滤镜画面会更加清晰，色彩会发生变化<br>
+2. <img src="./assets/Pasted image 20231024123233.png"><br>
+3. <img src="./assets/Pasted image 20231024124704.png"><br>
+4. <img src="./assets/Pasted image 20231024124745.png"><br>
+5. <img src="./assets/Pasted image 20231024124758.png"><br>
+6. <img src="./assets/Pasted image 20231024124807.png"><br>
+7. <img src="./assets/Pasted image 20231024124824.png"><br>
+8. 水面会变成黑色，天空会变成白色<br>
+1. 因为红外线承载热量为红色，水的温度低所以变成黑色，不再有红外线辐射到相机中<br>
+2. 树叶因为其特点可以反射红外线，所以呈现白色甚至过曝<br>
+3. 天空的也是凉的，所以颜色会深一点，白云会亮一点</li>
+</ol>
+</li>
+</ol>
+<h1 id="二-色彩心理学---不同民族对颜色有不同理解">二、色彩心理学 - 不同民族对颜色有不同理解 </h1>
+<h2 id="1-红">1、红 </h2>
+<ol>
+<li>温暖</li>
+<li>炎热
+<ol>
+<li>如火山喷发</li>
+</ol>
+</li>
+<li>能量
+<ol>
+<li>如火山喷发</li>
+</ol>
+</li>
+<li>热情
+<ol>
+<li>如果红色的衣服穿在人的身上会显得特别热情，精神，温暖</li>
+<li>
+<img src="./assets/Pasted image 20231024130006.png">
+</li>
+</ol>
+</li>
+<li>热闹，吉祥，喜庆
+<ol>
+<li>如过年的时候
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024130114.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024130144.png">
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>血腥，暴力
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024130223.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024130435.png">
+</li>
+</ol>
+</li>
+<li>大面积红色无边无际- 危险
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024130315.png">
+</li>
+</ol>
+</li>
+<li>警告
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024130339.png">
+</li>
+</ol>
+</li>
+<li>冲动，能让人皮肤更好
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024130539.png">
+</li>
+</ol>
+</li>
+<li>冲突
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024130632.png">
+</li>
+</ol>
+</li>
+<li>革命<br>
+1. <img src="./assets/Pasted image 20231024130702.png"></li>
+<li>权威
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024130715.png">
+</li>
+</ol>
+</li>
+<li>自信，性感
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024130754.png">
+</li>
+</ol>
+</li>
+<li></li>
+</ol>
+<h2 id="2-橙">2、橙 </h2>
+<ol>
+<li>温暖
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024130932.png">
+</li>
+</ol>
+</li>
+<li>炎热，能力，警告，冲突，张扬。·
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131020.png">
+</li>
+</ol>
+</li>
+<li>刺激
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131030.png">
+</li>
+</ol>
+</li>
+<li>自信，年轻</li>
+</ol>
+<h2 id="3-黄">3、黄 </h2>
+<ol>
+<li>温暖</li>
+<li>炎热，比红更加炎热
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131148.png">
+</li>
+</ol>
+</li>
+<li>能量，干燥
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131206.png">
+</li>
+</ol>
+</li>
+<li>刺激，警告，希望，更年轻
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131258.png">
+</li>
+</ol>
+</li>
+<li>活力，张扬，自信，
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131308.png">
+</li>
+</ol>
+</li>
+<li>富贵
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131353.png">
+</li>
+</ol>
+</li>
+<li>神圣-偏橙色一点
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131417.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="4-绿色">4、绿色 </h2>
+<ol>
+<li>自然，生命，年轻，活力，新鲜，安全，健康，环保，持续，轮回
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131502.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="4-青">4、青 </h2>
+<ol>
+<li>年轻
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131725.png">
+</li>
+</ol>
+</li>
+<li>健康
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131805.png">
+</li>
+</ol>
+</li>
+<li>安全
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131822.png">
+</li>
+</ol>
+</li>
+<li>纯净
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131845.png">
+</li>
+</ol>
+</li>
+<li>寒冷，冷静，理智，公正，廉洁
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131922.png">
+</li>
+</ol>
+</li>
+<li>清爽，包容，广阔
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024131937.png">
+</li>
+</ol>
+</li>
+<li></li>
+</ol>
+<h2 id="4-蓝">4、蓝 </h2>
+<ol>
+<li>冷静，安静，理智，思考，智慧，内向，广阔，深邃，包容
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024132447.png">
+</li>
+</ol>
+</li>
+<li>沉稳，保守<br>
+1. <img src="./assets/Pasted image 20231024132306.png"></li>
+<li>抑郁
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024132342.png">
+</li>
+</ol>
+</li>
+<li></li>
+</ol>
+<h2 id="4-紫色">4、紫色 </h2>
+<ol>
+<li>神秘
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024132608.png">
+</li>
+</ol>
+</li>
+<li>高贵
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024132622.png">
+</li>
+</ol>
+</li>
+<li>暧昧
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024132641.png">
+</li>
+</ol>
+</li>
+<li>性感
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024132723.png">
+</li>
+</ol>
+</li>
+<li></li>
+</ol>
+<h1 id="三-特殊色的心理影响">三、特殊色的心理影响 </h1>
+<h2 id="1-准确的描述颜色">1、准确的描述颜色 </h2>
+<h3 id="色彩三要素">色彩三要素 </h3>
+<ul>
+<li>在ps拾色器中
+<ul>
+<li>H表示色相</li>
+<li>S表示纯度也就是饱和度</li>
+<li>B表示明亮度</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>色相
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024135041.png">
+</li>
+<li></li>
+</ol>
+</li>
+<li>明度-纯度并没有发生改变
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024135125.png">
+ 1. 深的就叫明度比较低的红
+</li>
+</ol>
+</li>
+<li>纯度
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024135400.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024135506.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024135519.png">
+</li>
+</ol>
+</li>
+<li>色彩描述练习
+<ol>
+<li>棕色
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024135607.png">
+</li>
+<li>纯度高到极致就是橙色</li>
+<li>
+<img src="./assets/Pasted image 20231024135652.png">
+</li>
+<li>纯度极低的橙色就是棕色</li>
+</ol>
+</li>
+<li>橄榄绿
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024135820.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024135836.png">
+</li>
+<li>明度降低一些的纯度很低的黄绿就是橄榄绿</li>
+</ol>
+</li>
+<li>梅粉
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024135944.png">
+</li>
+<li>红色偏紫色一点，明度非常高的</li>
+</ol>
+</li>
+<li>普兰
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024140248.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024140334.png">
+</li>
+<li>蓝色偏青一点，纯度偏低</li>
+</ol>
+</li>
+<li>麻布灰
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024140429.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024140456.png">
+</li>
+<li>纯度高，明度低的黄。灰色偏一点黄</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>色彩出错了怎么办
+<ol>
+<li>色相不对
+<ol>
+<li>红色变成黄色</li>
+<li>黄色衣服变成白色衣服</li>
+<li>原因是相机白平衡</li>
+</ol>
+</li>
+<li>明度不对
+<ol>
+<li>亮度不对</li>
+<li>应对方案：曝光补偿</li>
+</ol>
+</li>
+<li>纯度不对
+<ol>
+<li>如皮肤颜色过于偏黄</li>
+<li>应对方法：色彩模式
+<ol>
+<li>如鲜艳模式，风光模式，低纯度模式</li>
+<li>
+<img src="./assets/Pasted image 20231024141108.png">
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="四-色彩三要素">四、色彩三要素 </h1>
+<h2 id="黑">黑 </h2>
+<ol>
+<li>厚重，沉稳，庄严
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024153353.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024153458.png">
+</li>
+</ol>
+</li>
+<li>中立</li>
+<li>未知，恐惧，危险，神秘
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024153513.png">
+</li>
+</ol>
+</li>
+<li>力量，孤独
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024153615.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="灰">灰 </h2>
+<ol>
+<li>中立
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024153702.png">
+</li>
+<li>思考
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024153719.png">
+</li>
+</ol>
+</li>
+<li>压抑，沉闷
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024153734.png">
+</li>
+</ol>
+</li>
+<li>温和
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024153754.png">
+</li>
+</ol>
+</li>
+<li>迷茫，神秘</li>
+</ol>
+</li>
+</ol>
+<h2 id="白">白 </h2>
+<ol>
+<li>神圣，明亮，宽敞，大方，纯洁，干净，简单，善良，死亡，恐怖
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024153848.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024154004.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024154214.png">
+</li>
+</ol>
+</li>
+</ol>
+<h1 id="五-色彩分析工具">五、色彩分析工具 </h1>
+<h2 id="1-色轮---只表现色相和明度变化缺少纯度">1. 色轮 - 只表现色相和明度变化，缺少纯度 </h2>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024154803.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024154826.png">
+</li>
+</ol>
+<h3 id="三原色">三原色 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024154957.png">
+</li>
+</ol>
+<h3 id="三间色">三间色 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024155052.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231024155113.png">
+</li>
+</ol>
+<h3 id="复色--三原色--三间色">复色 = 三原色 + 三间色 </h3>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024155136.png">
+</li>
+</ol>
+<h2 id="2-色立体">2. 色立体 </h2>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024155608.png">
+</li>
+<li>色相
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024155634.png">
+</li>
+</ol>
+</li>
+<li>明度高低
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024155644.png">
+</li>
+</ol>
+</li>
+<li>纯度
+<ol>
+<li>
+<img src="./assets/Pasted image 20231024155652.png">
+</li>
+</ol>
+</li>
+</ol>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#一-色既是空" class="md-toc-link"><p>一、色既是空</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#光的本质" class="md-toc-link">
+            <p>光的本质</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#二-色彩心理学---不同民族对颜色有不同理解" class="md-toc-link"><p>二、色彩心理学 - 不同民族对颜色有不同理解</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#1-红" class="md-toc-link">
+            <p>1、红</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2-橙" class="md-toc-link">
+            <p>2、橙</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#3-黄" class="md-toc-link">
+            <p>3、黄</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#4-绿色" class="md-toc-link">
+            <p>4、绿色</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#4-青" class="md-toc-link">
+            <p>4、青</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#4-蓝" class="md-toc-link">
+            <p>4、蓝</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#4-紫色" class="md-toc-link">
+            <p>4、紫色</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#三-特殊色的心理影响" class="md-toc-link"><p>三、特殊色的心理影响</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#1-准确的描述颜色" class="md-toc-link"><p>1、准确的描述颜色</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#色彩三要素" class="md-toc-link">
+            <p>色彩三要素</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#四-色彩三要素" class="md-toc-link"><p>四、色彩三要素</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#黑" class="md-toc-link">
+            <p>黑</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#灰" class="md-toc-link">
+            <p>灰</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#白" class="md-toc-link">
+            <p>白</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#五-色彩分析工具" class="md-toc-link"><p>五、色彩分析工具</p>
+</a>
+          </summary>
+        <div>
+          <details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#1-色轮---只表现色相和明度变化缺少纯度" class="md-toc-link"><ol>
+<li>色轮 - 只表现色相和明度变化，缺少纯度</li>
+</ol>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#三原色" class="md-toc-link">
+            <p>三原色</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#三间色" class="md-toc-link">
+            <p>三间色</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#复色--三原色--三间色" class="md-toc-link">
+            <p>复色 = 三原色 + 三间色</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2-色立体" class="md-toc-link">
+            <ol start="2">
+<li>色立体</li>
+</ol>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>

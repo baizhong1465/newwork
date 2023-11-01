@@ -1,0 +1,627 @@
+<!DOCTYPE html><html><head>
+      <title>5.影棚布光</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\slan\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.10\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="光源方向对人像的影响">光源方向对人像的影响 </h1>
+<ul>
+<li>光线对人的塑型</li>
+</ul>
+<h2 id="正面光">正面光 </h2>
+<ol>
+<li>大面积柔光罩，灯头远离相机</li>
+<li>脸部立体</li>
+<li>眼神光一般不要放在正中间
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029110048.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="逆时针15光">逆时针15°光 </h2>
+<ul>
+<li>左边颧骨出现大面积阴影，但是右边没有，左边偏暗，右边偏亮，凸显出立体感</li>
+<li>脖子凸显有多尖</li>
+</ul>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029110336.png">
+</li>
+</ol>
+<h2 id="逆时针30">逆时针30° </h2>
+<ol>
+<li>立体感更加明显，更加丰满，头发出现发光，头发立体感加强</li>
+<li>
+<img src="./assets/Pasted image 20231029110643.png">
+</li>
+</ol>
+<h2 id="逆时针45">逆时针45° </h2>
+<ul>
+<li>立体感变的极致，明暗交界线变的明显</li>
+<li>
+<img src="./assets/Pasted image 20231029110801.png">
+</li>
+<li>交代脸部形状，突出程度，鼻梁有高，鼻子有多大
+<ul>
+<li>
+<img src="./assets/Pasted image 20231029111114.png">
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="逆时针60">逆时针60° </h2>
+<ol>
+<li>鼻子的变的更加立体</li>
+<li>左侧脸明暗交接在一起，轮廓上不够干脆利落</li>
+<li>右侧脸也一样</li>
+<li>额头上皮肤呈现呈现不好
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029111228.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="逆时针75">逆时针75° </h2>
+<ul>
+<li>脸花的程度减轻，但是质感变的糟糕</li>
+<li>光比变得明显，</li>
+<li>头发质感很强</li>
+<li>
+<img src="./assets/Pasted image 20231029111500.png">
+</li>
+</ul>
+<h2 id="逆时针90">逆时针90° </h2>
+<ul>
+<li>鼻子稍微有一点亮，嘴唇有一点高光
+<ul>
+<li>
+<img src="./assets/Pasted image 20231029111701.png">
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="左后侧方45">左后侧方45° </h2>
+<ul>
+<li>只有鼻子一点高光</li>
+<li>头发质感加强
+<ul>
+<li>
+<img src="./assets/Pasted image 20231029111842.png">
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="左后侧方30">左后侧方30° </h2>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029112236.png">
+</li>
+</ol>
+<h2 id="左后侧方15">左后侧方15° </h2>
+<ul>
+<li>右边肩膀出现轮廓光，头发出现轮廓光</li>
+<li>将人物勾勒出来</li>
+<li>将人物和背景区别出来
+<ul>
+<li>
+<img src="./assets/Pasted image 20231029112401.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029112507.png">
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="正后方">正后方 </h2>
+<ol>
+<li>将整个人勾勒出来</li>
+<li>这张图上的灰色的光斑，是因为镜头没擦干净
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029112555.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="右侧光">右侧光 </h2>
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029112758.png">
+</li>
+</ol>
+<h2 id="右侧15光">右侧15°光 </h2>
+<ol start="2">
+<li>
+<img src="./assets/Pasted image 20231029112808.png">
+</li>
+</ol>
+<h2 id="右侧30光">右侧30°光 </h2>
+<ol start="4">
+<li>
+<img src="./assets/Pasted image 20231029112820.png">
+</li>
+</ol>
+<h2 id="右侧30左右光">右侧30°左右光 </h2>
+<ol start="6">
+<li>
+<img src="./assets/Pasted image 20231029112829.png">
+</li>
+</ol>
+<h2 id="右侧45光">右侧45°光 </h2>
+<ol start="8">
+<li>
+<img src="./assets/Pasted image 20231029112931.png">
+</li>
+</ol>
+<h2 id="右侧60光">右侧60°光 </h2>
+<ol start="10">
+<li>
+<img src="./assets/Pasted image 20231029112945.png">
+</li>
+</ol>
+<h2 id="右侧75光">右侧75°光 </h2>
+<ol start="12">
+<li>
+<img src="./assets/Pasted image 20231029113004.png">
+</li>
+</ol>
+<h2 id="正面">正面 </h2>
+<ol start="14">
+<li>
+<img src="./assets/Pasted image 20231029113015.png">
+</li>
+</ol>
+<h1 id="单灯用法">单灯用法 </h1>
+<h2 id="伦勃朗光---针对人物面部朝向">伦勃朗光 - 针对人物面部朝向 </h2>
+<ol>
+<li>斜上方45°
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029131845.png">
+</li>
+</ol>
+</li>
+<li>特点：在暗面形成倒三角，眼睛有少许眼神光，鼻梁挺拔。右边眉毛阴影一直连到鼻子，交代了眉骨的凸显程度，交代了鼻子的坚挺程度，交代了嘴唇的丰满程度
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029132009.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029132349.png">
+</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231029132403.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029132417.png">
+</li>
+<li>暗部眼皮有时候出现小亮点没有太大关系
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029132508.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="蝴蝶光">蝴蝶光 </h2>
+<ol>
+<li>正面45°光
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029132702.png">
+</li>
+</ol>
+</li>
+<li>特点，嘴唇上方有两个三角形亮斑，阴影不能连上嘴唇
+<ol>
+<li>眉骨到眼窝这部分会出现阴影，立体感更足</li>
+<li>鼻子会显得高</li>
+<li>颧骨出现阴影，两腮会变的暗，会变瘦</li>
+<li>
+<img src="./assets/Pasted image 20231029132727.png">
+</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231029143728.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029143758.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029143815.png">
+</li>
+</ol>
+<h2 id="全侧光-阴阳脸">全侧光 （阴阳脸） </h2>
+<ol>
+<li>通常使用两个设备
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029143912.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029143927.png">
+</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231029144046.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029144054.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029144104.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029144110.png">
+</li>
+</ol>
+<h1 id="双灯用法">双灯用法 </h1>
+<ul>
+<li>先确定一盏主光源，另一盏灯作为照亮暗部，辅光作用</li>
+</ul>
+<h2 id="基础布光">基础布光 </h2>
+<ol>
+<li>左30°右30°</li>
+<li>常用于拍摄证件照，只有在这种光下细节才会完整呈现
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029144217.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029144237.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="夹光">夹光 </h2>
+<ol>
+<li>人物两侧光线</li>
+<li>带一点丑化，一点喜剧的光线
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029144459.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029144526.png">
+</li>
+</ol>
+</li>
+</ol>
+<h2 id="三灯用法">三灯用法 </h2>
+<h3 id="主光--辅光--轮廓光">主光 + 辅光 + 轮廓光 </h3>
+<ul>
+<li>
+<img src="./assets/Pasted image 20231029145009.png">
+</li>
+</ul>
+<ol>
+<li>左边主光，右边补充暗部细节，后面凸显轮廓光
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029145038.png">
+</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231029145247.png">
+</li>
+<li>使用蝴蝶光，下方辅助光
+<ol>
+<li>
+<img src="./assets/Pasted image 20231029145301.png">
+</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231029145402.png">
+</li>
+</ol>
+<h3 id="主光--双轮廓光">主光 + 双轮廓光 </h3>
+<ul>
+<li>两边都有轮廓光，让背景和模特更加分明</li>
+<li>
+<img src="./assets/Pasted image 20231029145458.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029145527.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029145548.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029145601.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029145610.png">
+</li>
+<li>蝴蝶光，下下方补光，两侧轮廓光
+<ul>
+<li>
+<img src="./assets/Pasted image 20231029145655.png">
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="布光图---买书学布光图">布光图 - 买书学布光图 </h2>
+<ol>
+<li>
+<ol>
+<li>右下角 - 大蜂巢</li>
+<li>顶部 - 背景布或者纸</li>
+<li>左下角使用反光板，让暗部略微有一点光</li>
+<li>
+<img src="./assets/Pasted image 20231029145821.png">
+</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>顶部背景纸</li>
+<li>有侧使用束光筒朝背景打光 - 形成亮暗对比</li>
+<li>左侧使用大面积柔光罩作为主光</li>
+<li>
+<img src="./assets/Pasted image 20231029150158.png">
+</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>灰色或者黑色背景墙</li>
+<li>使用反光板提升暗部细节</li>
+<li>使用束光筒穿错格栅形成光栅作为主灯</li>
+<li>使用束光筒照亮人物略微提亮</li>
+<li>
+<img src="./assets/Pasted image 20231029150503.png">
+</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>白色背景纸</li>
+<li>柔光罩主灯照亮人物脸</li>
+<li>后方提亮暗部</li>
+<li>
+<img src="./assets/Pasted image 20231029150900.png">
+</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>主光：反光伞照亮发光</li>
+<li>辅光：两盏猪鼻子照亮两边</li>
+<li>
+<img src="./assets/Pasted image 20231029151045.png">
+</li>
+</ol>
+</li>
+<li>
+<ol>
+<li>格栅主光</li>
+<li>
+<img src="./assets/Pasted image 20231029151326.png">
+</li>
+</ol>
+</li>
+<li>大师
+<ol>
+<li>主光：</li>
+<li>左边猪鼻子形成轮廓光</li>
+<li>右边栅格柔光箱形成发光</li>
+<li>反光板提高暗部</li>
+<li>猪鼻子照亮人物的形成高光</li>
+<li>
+<img src="./assets/Pasted image 20231029151420.png">
+</li>
+</ol>
+</li>
+<li>
+<img src="./assets/Pasted image 20231029151604.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029151618.png">
+</li>
+<li>
+<img src="./assets/Pasted image 20231029151626.png">
+</li>
+<li></li>
+</ol>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#光源方向对人像的影响" class="md-toc-link"><p>光源方向对人像的影响</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#正面光" class="md-toc-link">
+            <p>正面光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#逆时针15光" class="md-toc-link">
+            <p>逆时针15°光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#逆时针30" class="md-toc-link">
+            <p>逆时针30°</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#逆时针45" class="md-toc-link">
+            <p>逆时针45°</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#逆时针60" class="md-toc-link">
+            <p>逆时针60°</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#逆时针75" class="md-toc-link">
+            <p>逆时针75°</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#逆时针90" class="md-toc-link">
+            <p>逆时针90°</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#左后侧方45" class="md-toc-link">
+            <p>左后侧方45°</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#左后侧方30" class="md-toc-link">
+            <p>左后侧方30°</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#左后侧方15" class="md-toc-link">
+            <p>左后侧方15°</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#正后方" class="md-toc-link">
+            <p>正后方</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#右侧光" class="md-toc-link">
+            <p>右侧光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#右侧15光" class="md-toc-link">
+            <p>右侧15°光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#右侧30光" class="md-toc-link">
+            <p>右侧30°光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#右侧30左右光" class="md-toc-link">
+            <p>右侧30°左右光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#右侧45光" class="md-toc-link">
+            <p>右侧45°光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#右侧60光" class="md-toc-link">
+            <p>右侧60°光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#右侧75光" class="md-toc-link">
+            <p>右侧75°光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#正面" class="md-toc-link">
+            <p>正面</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#单灯用法" class="md-toc-link"><p>单灯用法</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#伦勃朗光---针对人物面部朝向" class="md-toc-link">
+            <p>伦勃朗光 - 针对人物面部朝向</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#蝴蝶光" class="md-toc-link">
+            <p>蝴蝶光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#全侧光-阴阳脸" class="md-toc-link">
+            <p>全侧光 （阴阳脸）</p>
+
+          </a></div>
+        </div>
+      </details>
+    <details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#双灯用法" class="md-toc-link"><p>双灯用法</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#基础布光" class="md-toc-link">
+            <p>基础布光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#夹光" class="md-toc-link">
+            <p>夹光</p>
+
+          </a></div><details style="padding:0;;padding-left:24px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#三灯用法" class="md-toc-link"><p>三灯用法</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#主光--辅光--轮廓光" class="md-toc-link">
+            <p>主光 + 辅光 + 轮廓光</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#主光--双轮廓光" class="md-toc-link">
+            <p>主光 + 双轮廓光</p>
+
+          </a></div>
+        </div>
+      </details>
+    <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#布光图---买书学布光图" class="md-toc-link">
+            <p>布光图 - 买书学布光图</p>
+
+          </a></div>
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
